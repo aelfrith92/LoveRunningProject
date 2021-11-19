@@ -1,0 +1,2 @@
+run = "python3 -m http.server"
+language = "python3" # optional
