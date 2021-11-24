@@ -35,14 +35,12 @@ h1, h2 {
 
 #menu, #logo {
   line-height: 75px;
-  height: 75px;
 }
 
 #menu li {
   float: right;
-  letter-spacing: 4px;
   list-style-type: none;
-  margin-right: 15px;
+  margin-right: 30px;
 }
 
 #menu a {
@@ -56,4 +54,33 @@ h1, h2 {
 
 .active {
   border-bottom: 1px solid #3a3a3a;
+}
+
+/*hero image*/
+
+#hero-outer {
+  height: 600px;
+  width: 100%; /* can be omitted */
+  overflow: hidden; /*can be omitted */
+}
+
+#hero-image {
+  height: 600px;
+  width: 100%;
+  background: url('../images/hero-image.webp') no-repeat center center;
+
+  /*creates the animation effect*/
+  /*shorthand property used as follows*/
+  animation: magnifier 5s forwards; 
+}
+
+/* creates the zoom effect for the hero header img */
+
+@keyframes magnifier {
+  from {
+    tranform: scale (1);
+       }
+  to {
+    transform: scale(1.1);
+     }  
 }
