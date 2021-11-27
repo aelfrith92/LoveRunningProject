@@ -226,3 +226,16 @@ footer {
   padding: 5%;
   color: #3a3a3a;
 }
+
+/* gallery */
+
+#photos {
+  clear: both;
+  line-height: 0;
+  column-count: 4; /* splits the container's width into 4 columns equally divided */
+  column-gap: 0; /* gets rid of gaps between adjacent images */
+}
+
+#photos img{
+  width: 100%; /* this way, width is set to 100% of the column - like a container - and height adjusts to it */
+}
